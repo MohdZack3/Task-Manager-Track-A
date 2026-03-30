@@ -155,7 +155,7 @@ class _TaskFormScreenState extends State<TaskFormScreen> {
                         await provider.addTask(task);
                       } else {
                         await provider.api
-                            .updateTask(widget.task!.id!, task);
+                            .updateTask(widget.task!.id!, task.toJson());
                         await provider.fetchTasks();
                       }
 

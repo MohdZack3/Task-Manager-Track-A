@@ -41,6 +41,7 @@ Task({
       "blocked_by": blockedBy,
       "is_recurring": isRecurring,
       "recurring_type": recurringType,
+      "priority": 0,
     };
   }
 }

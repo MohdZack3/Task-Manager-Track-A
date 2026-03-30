@@ -23,11 +23,11 @@ Future<List<Task>> getTasks() async {
     );
   }
 
-  Future<void> updateTask(int id, Task task) async {
+  Future<void> updateTask(int id, Map<String, dynamic> data) async {
     await http.put(
       Uri.parse("$baseUrl/tasks/$id"),
       headers: {"Content-Type": "application/json"},
-      body: jsonEncode(task.toJson()),
+      body: jsonEncode(data),
     );
   }
 
@@ -35,3 +35,4 @@ Future<List<Task>> getTasks() async {
     await http.delete(Uri.parse("$baseUrl/tasks/$id"));
   }
 }
+
