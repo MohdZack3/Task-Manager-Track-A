@@ -90,9 +90,16 @@ http://127.0.0.1:8000
 
 ### 🔧 Frontend Setup (Flutter)
 
-#In bash
+```bash
 cd task_manager
 
 flutter pub get
 
 flutter run
+
+---
+
+## ⚙️ AI Usage
+
+- ChatGPT
+
